@@ -1,0 +1,72 @@
+/* making the content to center of all*/
+body{
+    margin: 0;
+    background-color: lightcyan;
+    color: darkgreen;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center; /*making everything center horizontally*/
+    align-items: center; /* making everything center vertically*/
+    font-family: monospace;
+}
+
+.container{
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .3); /*x axes value, y axes value, blurness, opacity (color)*/
+    border-radius: 10px;
+    padding: 20px;
+    width:85%; /* making the container to take 85 percent*/
+    max-width: 400px; /* limit the max width*/ 
+    text-align: center; /* setting the text alignment to centers*/
+    font-size: 20px;
+}
+
+.heading{
+    margin: 5px;
+    font-size: 30px;
+}
+
+.ratings-container{
+    display: flex;
+    padding: 20px 0; /* padding 20px for top and bottom, 0 px for left and right*/
+    
+}
+
+.rating{
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px 5px; /* margin 10 px for tom and bottom, 5 px for right and left*/
+}
+
+.rating:hover,
+.rating.active{
+    background-color: darkseagreen; /*adding background color on hover*/ 
+    border-radius: 10px; /* adding border radius on hover*/ 
+    box-shadow: 0 0 10px rgba(0,0,0,.3); /* adding shadow on hover*/
+    color: aliceblue;  /* changing text color*/
+    transition: all 300ms ease;
+}
+
+.rating img{
+    width: 40px;
+}
+
+.btn{
+    background-color: darkcyan;
+    color: aliceblue;
+    border: none;
+    margin: 10px;
+    border-radius: 4px;
+    padding: 12px 30px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+    transition: all 300ms ease;
+}
+
+.btn:active{
+    transform: scale(0.96); /* shrinking the bottom when active to 96%*/
+}
